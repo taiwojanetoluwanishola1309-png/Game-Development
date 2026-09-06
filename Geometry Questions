@@ -1,0 +1,281 @@
+Geometry Questions
+
+Question 1
+
+Find the Distance between points A (2,3) and B (7,15)
+Using the Formula for Distance 
+AB = √((x2 - x1)2 + (y2 - y1)2) 
+ = √((7-2)2 + (15-3))
+ = √((5)2   + (12)2 
+ = √25 + 144
+   = √169
+= 13/13 = Perfect Square 
+
+Question 2
+
+Find the midpoint of the segment joining ((-4,6) and D (8,-2)
+Formula: midpoint (x ,y) = {(x1 + x2)/2, (y1 + y2)/2} 
+
+((-4)+8 ÷ 2, 6+(-2) ÷ 2 
+
+4 ÷ 2, 4 ÷ 2
+
+M= 2, 2
+
+Question 3:
+
+A point P (X, 4) is equidistance from A (1, 1) and B (5, 1). Find X 
+
+The points are 
+P (X, 4)
+A (1, 1) 
+B (5,1)
+
+Based on the question PA = PB 
+
+Using the formula for calculating Distance
+Distance = √ {(X2  - X1)² + (Y² - Y1)²}
+
+Distance between P and A
+                        For P=(X,4)P=(X,4) and A=(1,1)A=(1,1):
+PA=(X−1)²+(4−1)² 
+
+Distance between P and B
+                        For P=(X,4)P=(X,4) and B=(5,1)B=(5,1):
+PB=(X−5)²+(4−1)² 
+
+(X−1)2+(4−1)2​=(X−5)2+(4−1)2​ 
+
+X = 3
+
+Question 4
+
+Find the slope of the line through (3, -2 ) and (-1, 6) 
+
+Slope formula = (m) = (y2 -y1) / (X2-X1 )
+ (m) = 6 - (-2) / ((-1) - 3
+=(m) = 6+2/-4
+= 8/-4
+=-2
+m=-2
+
+Question 5 
+
+Write the equation of the line passing through (2,5) with slope -3 
+
+The point-slope formula is 
+y -y 1 = M (x -x1 )
+
+M = slope = -3
+
+The line is passing through the points (2,5).
+
+y - 5 = -3(x - 2) = equation
+
+
+Question 6 
+
+Find the equation of the line passing through (1.2) and (4,11) in slope-intercept form  
+
+Given points 
+ First point: X1 = 1
+Y1 = 2
+Second Point: X2 = 4
+Y2 = 11
+
+The formula for slope-intercept form = y = mx + b. 
+
+Where M = slope and b = y-intercept 
+
+Y = slope multiplied by X + Y intercept 
+
+Finding slope: m = y2 -  y1
+                                 ______
+                                   x 2 -x 1
+ m = 11 - 2
+        ______ = 9/3 = 3
+         4-1
+
+m = 3, slope = 3
+
+
+Going back to our formula for slope intercept to insert M
+
+Y = mx + b = Y = 3x + b 
+
+Now finding B using our slope-intercept formula
+
+Y = 3x + b, and replacing Y and X with their respective given points
+
+2 = 3(1) + b 
+
+2 = 3 + b 
+
+Subtracting 3 from both sides to find b 
+
+= 2-3 = 3-3
+= -1 = b
+b = -1
+
+Putting M and B into the formula
+
+ y = mx + b
+Y = 3x + b
+Y = 3x - 1 Answer: the equation of the line passing through (1.2) and (4,11) in slope-intercept form is Y = 3x - 1
+
+
+Question 7 
+
+
+Sprite Movement: A character starts at position (50, 100) on screen and moves in a straight line to (200, 400) over 5 seconds at a constant speed. What is the character’s speed in pixels/second (use the distance formula)
+
+Starting position = (50, 100)
+Straight line position = (200, 400)
+Time: 5 seconds 
+Character’s speed = unknown
+Using the distance formula
+
+Distance = √ {(X2  - X1)² + (Y² - Y1)²}
+Distance = √ {(200 - 50)² + (400 - 100)²}
+= √ (150)² + (300)²
+= √ 22500 +90,000
+= √ 112,500 perfect square 
+
+√112,500 = 1125 multiplied by 100
+= 225 × 5 × 100
+                         = 15 × √5 × 10
+ = √225 × 500 
+15 × 15 = 225
+=15√500
+
+Now 500 = 100 × 5 
+= 15 √ 100 × 5 
+= 15 × 10 √ 5
+√ 5 = 2.236
+
+= 150 × 2.236 = 335.4
+
+D = 335.4 pixels
+
+
+Question 8: Collision Detection: A circular Enemy Hitbox is centred at (300, 250) with a radius of 20 pixels. The player’s position is (310, 265). Is the player within the enemy’s hit box range? 
+
+The hitbox is centred at (300, 250).
+Radius = 20 pixels
+The player's Position is (310, 265).
+
+First I will calculate the distance between the player and the centre of the circle. 
+Distance = √ (X2  - X1)² + (Y² - Y1)²
+Distance = √ (310 - 300)² + (265 - 250)²
+Distance = √ (10)² + (15)²
+Distance = √ 100 + 225 = √ 325
+Distance = √325: finding a perfect square 
+
+= √325 / 25 = 13
+= √325 = √25 × 13 = 5 × √13
+
+Turning 13 into a decimal is √13 because 4 multiplied by 4 will be 16 and 3 multiplied by 3 will be 9. The answer lies between 3 and 4, = 3.6055.
+
+Then I bring down 5 × √13, replacing 13 with 3.6055.
+
+5 multiplied by 3.6055 = 18.075 – rounding off to 18.03
+
+D = 18.03
+
+When 18.03 is compared to the given radius of 20, it is lower, which means the distance is less than the radius and the player is within the enemy’s hitbox range.
+
+
+Question 9: 
+
+Waypoint pathing: An NPC patrols between waypoints (100,100) and (100,300), then (400,300). If the NPC moves at a fixed speed, what is the total distance of one patrol loop (there and back through all three points)?
+
+
+The way points are 
+
+Point A = (100,100)
+Point B = (100,300)
+Point C  =( 400,300)
+
+First I am finding the distance between points A and B and points B and C.
+
+The distance between points A and B is 
+
+Distance = √ (X2  - X1)² + (Y² - Y1)²
+Distance = √ (100  - 100)² + (300 - 100)²
+Distance = √ (0)² + (200)²
+Distance = √ (0)² + (40,000)
+
+Perfect Square = √400 multiplied by 100
+ √ 400 = √ 20
+100 √ 10
+20 multiplied by 10 = 200 
+
+AB = 200 
+
+Now, I am finding the distance between points B and C.
+Distance = √ (X2  - X1)² + (Y² - Y1)²
+Distance = √ (400-100)² + (300-300)²
+Distance = √ (300)² + (0)²
+Distance = √ 9000+ (0)
+
+Perfect Square = 300 BC = 300
+
+However, because Point B = (100,300) and Point C = (400,300) and Y 1 and Y 2  are the same, the movement was essentially completed horizontally – which is on the X axis – and to find the distance between point B and C on the X axis given the points, point C will minus point B because Distance cannot be negative: 400 - 100. Answer = 300
+
+Because based on the question, the patrol loop also went forth and back, I need to calculate the total distance. 
+
+Total Distance = 2(AB) + 2(BC)
+
+= 2(200) + 2(300)
+= 400 + 600 = 1,000 Total Distance is 1,000
+
+
+Question 10: 
+
+Camera centring: A game camera should stay centred on the midpoint between two players at (120, 80) and (480, 240), so both remain in view. Find the coordinates the camera should target 
+
+The given points are:
+
+Midpoint 1: 120, 80
+
+Midpoint 2: 480, 240
+
+M = (X1+X2, Y1+Y2)    ° This should be a big bracket, but it is not found on  PC
+              2              2
+
+M = 120 + 480      = M = 600 divided by 2 is 300 
+
+            2
+Y = 80 + 240 =  320 divided by 2 is 160
+
+            2
+
+The camera should target 300; 160
+
+
+Question 11:
+
+Line of Sight: A turret at (0,0) can only fire in a straight line. An enemy is at (6.8). What is the slope of the line the turret must aim along, and how far away is the enemy?
+
+The given points are:
+
+Turret: (0,0). 
+The enemy is at (6,8).
+
+Formula for slope = m = y2   -   y1
+                        ━━━━━━━━
+                        X2  - X1
+m = 8   -   0
+   ━━━━━━━━  =   8 divided by 6 is 1.2.
+     6 - 0
+Calculating the Distance: 
+
+Distance = √ (X2  - X1)² + (Y² - Y1)²
+D = √ (6-0)² + (8-0)²
+D = √ (6) 2+(8)2
+D = √36 + 64
+D = √ √100
+
+Perfect square = √ 10. Distance is 10 
+
+
