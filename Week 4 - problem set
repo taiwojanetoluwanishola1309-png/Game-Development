@@ -1,0 +1,22 @@
+extends Node
+
+
+# Array of strings with 5 names
+var names: Array[String]=["Janey", "Janet","Jan", "Jane", "Jae"]
+	
+func _ready():
+	print_names()
+	swap_first_last(names)
+	print("After swap:")
+	print_names()
+	
+	# Print the names in order with a for loop
+func print_names ():
+	for name in names: 
+		print(name)
+		
+		# swap the first value with the last one
+func swap_first_last(arr):
+		var temp = arr[0]
+		arr[0] = arr[arr.size()-1]
+		arr[arr.size()-1] = temp
