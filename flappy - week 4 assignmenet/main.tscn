@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dkpioyj52r0cm"]
+
+[ext_resource type="PackedScene" uid="uid://dhju5ojv3n07y" path="res://bird.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://chbqdh1ixptko" path="res://bird.gd" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://dffyded8qe2ug" path="res://tubes.tscn" id="3_h2yge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8el28"]
+size = Vector2(10000, 80)
+
+[sub_resource type="QuadMesh" id="QuadMesh_8el28"]
+size = Vector2(10000, 80)
+
+[node name="Main" type="Node" unique_id=54047730]
+
+[node name="Bird" parent="." unique_id=1949451269 instance=ExtResource("1_0xm2m")]
+position = Vector2(551, 423)
+script = ExtResource("2_h2yge")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1794215067]
+position = Vector2(4200, 713)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1394129147]
+shape = SubResource("RectangleShape2D_8el28")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D" unique_id=1645953205]
+position = Vector2(-64, 0)
+mesh = SubResource("QuadMesh_8el28")
+
+[node name="Camera2D" type="Camera2D" parent="StaticBody2D/MeshInstance2D" unique_id=1633696602]
+position = Vector2(-3557, -232)
+offset = Vector2(0, -50)
+limit_bottom = 750
+
+[node name="Tubes" parent="." unique_id=758984925 instance=ExtResource("3_h2yge")]
+position = Vector2(1054, 236)

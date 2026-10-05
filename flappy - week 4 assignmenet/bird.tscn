@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dhju5ojv3n07y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_owhn0"]
+radius = 30.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_wcy3t"]
+radius = 30.0
+height = 60.0
+
+[node name="Bird" type="CharacterBody2D" unique_id=1949451269]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=309673367]
+position = Vector2(-6.9999995, 8)
+shape = SubResource("CircleShape2D_owhn0")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1847465527]
+position = Vector2(-6, 8)
+mesh = SubResource("SphereMesh_wcy3t")
+
+[node name="Camera2D" type="Camera2D" parent="MeshInstance2D" unique_id=2079564826]

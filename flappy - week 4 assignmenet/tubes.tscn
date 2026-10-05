@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dffyded8qe2ug"]
+
+[ext_resource type="Script" uid="uid://wmvn6itit7lj" path="res://tubes.gd" id="1_6e027"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_of86f"]
+size = Vector2(100, 1000)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8el28"]
+size = Vector2(100, 1000)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o1niu"]
+size = Vector2(100, 1000)
+
+[node name="Tubes" type="Node2D" unique_id=758984925]
+script = ExtResource("1_6e027")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=782911970]
+position = Vector2(0, -595)
+mesh = SubResource("QuadMesh_of86f")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="." unique_id=1303540749]
+position = Vector2(0, 595)
+mesh = SubResource("QuadMesh_of86f")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=214683484]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1287126413]
+position = Vector2(0, -595)
+shape = SubResource("RectangleShape2D_8el28")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1624164487]
+position = Vector2(0, 595)
+shape = SubResource("RectangleShape2D_o1niu")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
